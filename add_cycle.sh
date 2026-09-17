@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i '/fun updateSearchQuery/a \    fun cycleSortOrder() {\n        _sortOrder.update { current ->\n            when (current) {\n                SortOrder.DATE_DESC -> SortOrder.DATE_ASC\n                SortOrder.DATE_ASC -> SortOrder.LOCATION\n                SortOrder.LOCATION -> SortOrder.DATE_DESC\n            }\n        }\n    }\n' app/src/main/java/com/example/viewmodel/AkshiViewModel.kt

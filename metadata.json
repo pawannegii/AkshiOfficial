@@ -1,0 +1,6 @@
+{
+  "name": "Akshi",
+  "description": "AI-powered onion quality grading tool for Smart India Hackathon 2026. Analyzes onion batches for Grade A %, URS %, and defect breakdowns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

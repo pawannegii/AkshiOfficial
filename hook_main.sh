@@ -1,0 +1,2 @@
+#!/bin/bash
+sed -i 's/onSearchQueryChange = { viewModel.updateSearchQuery(it) },/onSearchQueryChange = { viewModel.updateSearchQuery(it) },\n                onFilterClick = { \n                    viewModel.cycleSortOrder()\n                    Toast.makeText(context, "Sorted by: ${viewModel.sortOrder.value.label}", Toast.LENGTH_SHORT).show()\n                },/' app/src/main/java/com/example/MainActivity.kt
